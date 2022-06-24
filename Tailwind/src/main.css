@@ -1,0 +1,18 @@
+@tailwind base;
+
+/*É possível criar classes personalizadas (as classes personalizadas devem vir após "base"):*/
+
+.botão {
+    @apply outline-none py-2 px-4 text-white font-semibold rounded-md;
+}
+
+.botão_teal {
+    @apply bg-teal-500;
+}
+
+.botão_teal:hover {
+    @apply bg-teal-600;
+}
+
+@tailwind components;
+@tailwind utilities;
